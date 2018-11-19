@@ -122,14 +122,20 @@ body.compensate-for-scrollbar {
     outline: none;
     overflow: auto;
     -webkit-overflow-scrolling: touch;
-    padding: 44px;
+    padding: 4px;
     position: absolute;
     text-align: center;
-    top: 0;
+    top: 40px;
     transition-property: transform, opacity;
     white-space: normal;
     width: 100%;
     z-index: 99994;
+}
+
+@media screen and (max-width: 576px) {
+    .fancybox-slide {
+        padding: 0px;
+    }
 }
 
 .fancybox-slide::before {
@@ -293,20 +299,20 @@ body.compensate-for-scrollbar {
 /* Buttons */
 
 .fancybox-button {
-    background: rgba(30, 30, 30, .6);
+    background: rgba(138, 0, 0, 22.6);
     border: 0;
-    border-radius: 0;
+    border-radius: 10px;
     box-shadow: none;
     cursor: pointer;
     display: inline-block;
-    height: 44px;
+    height: 38px;
     margin: 0;
     padding: 10px;
     position: relative;
     transition: color .2s;
     vertical-align: top;
     visibility: inherit;
-    width: 44px;
+    width: 38px;
 }
 
 .fancybox-button,

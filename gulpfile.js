@@ -43,7 +43,7 @@ gulp.task('scripts', function() {
         .pipe(rename({suffix: '.min'}))
         .pipe(uglify())
         .pipe(header(banner, { pkg : pkg } ))
-        .pipe(gulp.dest('dist'));
+        .pipe(gulp.dest('C:\\Users\\55107806\\Source\\Repos\\Tiles\\Mmu.Tiles\\Mmu.Tiles.MvcWebApp.AzureAd\\Scripts'));
     });
 
 
@@ -60,7 +60,7 @@ gulp.task('css', function() {
         .pipe(gulp.dest('dist'))
         .pipe(rename({suffix: '.min'}))
         .pipe(cssnano({zindex: false}))
-        .pipe(gulp.dest('dist'));
+        .pipe(gulp.dest('C:\\Users\\55107806\\Source\\Repos\\Tiles\\Mmu.Tiles\\Mmu.Tiles.MvcWebApp.AzureAd\\Content'));
 });
 
 // Default Task
